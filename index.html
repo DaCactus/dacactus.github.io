@@ -1,1 +1,33 @@
-a
+<!doctype html>
+
+<html>
+	<head>
+          <meta charset="utf-8">
+          <title>dumbo is bae</title>
+          <link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+     	<body cz-shortcut-listen="true">
+        	<img id="dumbo" src="dumbo.png" class="calmDumbo" alt="image de dumbo" onclick="fire()">
+          	<h1>mulet.space</h1>
+          	<h3>le mulet de l'espace</h3>
+          	<h2></h2>
+     	<script type="text/javascript">
+               var dumboff = true;
+               var dumbodio = new Audio('dumbo.mp3');
+               var dumbopic = document.getElementById("dumbo");
+
+               function fire() {
+                    if(dumboff){
+                         dumbodio.play();
+                         dumbopic.className = "fireDumbo";
+                         dumboff = false;
+                    }
+                    else{
+                         dumbodio.pause();
+                         dumbopic.className = "";
+                         dumboff = true;
+                    }
+               }
+     		</script>
+	</body>
+</html>
